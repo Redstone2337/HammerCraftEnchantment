@@ -11,7 +11,7 @@
         "affected": "attacker",
         "effect": {
           "type": "hce:slowness_curse_effect",
-          "speedReduction": {
+          "slownessLevel": {
             "type": "minecraft:linear",
             "base": 1.5,
             "per_level_above_first": 1.5
