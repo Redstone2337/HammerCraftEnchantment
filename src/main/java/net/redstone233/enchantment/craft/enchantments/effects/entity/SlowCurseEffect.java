@@ -9,6 +9,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Vec3d;
 
@@ -22,11 +23,12 @@ public record SlowCurseEffect(EnchantmentLevelBasedValue slownessLevel) implemen
 
     @Override
     public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity user, Vec3d pos) {
-        if (!(user instanceof LivingEntity livingEntity)) return;
+        if (user instanceof LivingEntity livingEntity) {
+            if (!(user instanceof PlayerEntity)) return;
 
-        livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 200, (int) slownessLevel.getValue(level), false, false, false));
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 200, (int) slownessLevel.getValue(level), false, false, false));
+        }
     }
-
     @Override
     public MapCodec<? extends EnchantmentEntityEffect> getCodec() {
         return CODEC;
