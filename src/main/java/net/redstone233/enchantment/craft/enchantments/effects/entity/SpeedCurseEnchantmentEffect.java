@@ -9,6 +9,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Vec3d;
@@ -24,10 +25,11 @@ public record SpeedCurseEnchantmentEffect(EnchantmentLevelBasedValue speedReduct
 
     @Override
     public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity user, Vec3d pos) {
-        if (!(user instanceof LivingEntity livingEntity)) return;
-
-        // 应用速度降低效果，等级为level，持续时间为20 tick，速度降低的等级由EnchantmentLevelBasedValue决定
-        livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20, level, false, false, false));
+        if (user instanceof PlayerEntity player) {
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED,20,level,false,false,false));
+        } else {
+            return;
+        }
 
         Random random = world.getRandom();
         double d = random.nextGaussian() * 0.02;
