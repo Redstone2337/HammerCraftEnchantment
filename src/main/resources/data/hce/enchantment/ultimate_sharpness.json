@@ -1,0 +1,37 @@
+{
+	"description": {
+		"translate": "enchantment.hce.ultimate_sharpness",
+		"color": "red"
+	},
+	"exclusive_set": "#minecraft:exclusive_set/damage",
+	"supported_items": "#minecraft:enchantable/sharp_weapon",
+	"primary_items": "#minecraft:enchantable/sword",
+	"weight": 1,
+	"max_level": 5,
+	"min_cost": {
+		"base": 120,
+		"per_level_above_first": 16
+	},
+	"max_cost": {
+		"base": 120,
+		"per_level_above_first": 20
+	},
+	"anvil_cost": 11,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:damage": [
+			{
+				"effect": {
+					"type": "minecraft:add",
+					"value": {
+						"type": "minecraft:linear",
+						"base": 4,
+						"per_level_above_first": 3
+					}
+				}
+			}
+		]
+	}
+}

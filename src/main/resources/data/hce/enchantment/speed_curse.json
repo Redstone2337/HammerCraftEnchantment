@@ -1,0 +1,44 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.hce.speed_curse",
+    "color": "green"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "attacker",
+        "effect": {
+          "type": "hce:speed_curse_effect",
+          "speedReduction": {
+            "type": "minecraft:linear",
+            "base": 2.0,
+            "per_level_above_first": 2.0
+          }
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": true
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/equippable",
+  "weight": 1
+}

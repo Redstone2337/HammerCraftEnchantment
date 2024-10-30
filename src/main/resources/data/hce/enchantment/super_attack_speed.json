@@ -1,0 +1,37 @@
+{
+	"description": {
+		"translate": "enchantment.hce.super_attack_speed",
+		"color": "gold"
+	},
+	"exclusive_set": "hce:attack_speed",
+	"supported_items": "#minecraft:enchantable/sharp_weapon",
+	"primary_items": "#minecraft:enchantable/sharp_weapon",
+	"weight": 1,
+	"max_level": 5,
+	"min_cost": {
+		"base": 3,
+		"per_level_above_first": 8
+	},
+	"max_cost": {
+		"base": 7,
+		"per_level_above_first": 9
+	},
+	"anvil_cost": 13,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"id": "enchantment_attack_speed",
+				"attribute": "minecraft:generic.attack_speed",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": 1,
+					"per_level_above_first": 0.5
+				},
+				"operation": "add_multiplied_base"
+			}
+		]
+	}
+}

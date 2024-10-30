@@ -1,0 +1,47 @@
+{
+    "description": {
+        "translate": "enchantment.hce.super_protection",
+        "color": "light_purple"
+    },
+    "exclusive_set": "#minecraft:exclusive_set/armor",
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 6,
+    "max_level": 5,
+    "min_cost": {
+        "base": 65,
+        "per_level_above_first": 11
+    },
+    "max_cost": {
+        "base": 90,
+        "per_level_above_first": 11
+    },
+    "anvil_cost": 14,
+    "slots": [
+        "armor"
+    ],
+    "effects": {
+        "minecraft:damage_protection": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 8,
+                        "per_level_above_first": 1
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "minecraft:bypasses_invulnerability",
+                                "expected": false
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "description": {
+        "translate": "enchantment.hce.armor",
+        "color": "red"
+    },
+    "exclusive_set": "#minecraft:exclusive_set/armor",
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 1,
+    "max_level": 10,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 5
+    },
+    "max_cost": {
+        "base": 15,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 7,
+    "slots": [
+        "armor"
+    ],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "protection",
+                "attribute": "minecraft:generic.armor",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 2,
+                    "per_level_above_first": 2
+                },
+                "operation": "add_value"
+            }
+        ]
+    }
+}
