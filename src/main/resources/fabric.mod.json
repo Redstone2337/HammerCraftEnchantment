@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
-	"id": "hammercraftenchantments",
+	"id": "hce",
 	"version": "${version}",
-	"name": "HammerCraftEnchantments",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Hammer Craft Enchantments",
+	"description": "Welcome to the Hammer Craft Enchant Expansion Pack.",
 	"authors": [
-		"Me!"
+		"Redstone233"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://Redstone2337.github.io",
+		"sources": "https://github.com/Redstone2337/HammerCraftEnchantment"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/hce/icon.png",
