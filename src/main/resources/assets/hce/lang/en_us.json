@@ -127,5 +127,9 @@
     "enchantment.hce.advanced_smite.desc": "Deals massive damage to undead creatures.",
     
     "enchantment.hce.super_smite": "Super Sharpness",
-    "enchantment.hce.super_smite.desc": "Deals massive damage to undead creatures."
+    "enchantment.hce.super_smite.desc": "Deals massive damage to undead creatures.",
+
+"enchantment.hce.speed_curse": "Speed Curse",
+    "enchantment.hce.slowness_curse": "Slowness Curse"
+
 }
