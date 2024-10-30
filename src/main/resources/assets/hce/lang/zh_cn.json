@@ -36,5 +36,9 @@
     "enchantment.hce.advanced_smite.desc": "对亡灵生物造成大量伤害",
     
     "enchantment.hce.super_smite": "超级亡灵杀手",
-    "enchantment.hce.super_sharpness.desc": "对亡灵生物造成巨量伤害"
+    "enchantment.hce.super_sharpness.desc": "对亡灵生物造成巨量伤害",
+
+
+					"enchantment.hce.speed_curse": "速度诅咒",
+    	"enchantment.hce.slowness_curse": "缓慢诅咒"
 }
