@@ -35,3 +35,9 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
+      - name: Upload jar
+        if: startsWith(github.ref, 'refs/heads/')
+        uses: actions/upload-artifact@v4
+        with:
+          name: hce-${{matrix.arch}}
+          path: build/libs/*    
