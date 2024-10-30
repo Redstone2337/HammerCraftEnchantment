@@ -1,0 +1,40 @@
+{
+    "enchantment.hce.vampire": "吸血",
+    "enchantment.hce.vampire.desc": "攻击怪物时回复少量血量",
+    "enchantment.hce.armor": "防护",
+    "enchantment.hce.armor.desc": "给穿戴者提供一些防护",
+    "enchantment.hce.advanced_armor": "高级防护",
+    "enchantment.hce.advanced_armor.desc": "提供穿戴者更好的防护",
+    "enchantment.hce.attack_speed": "攻击加速",
+    "enchantment.hce.attack_speed.desc": "增加少许攻击加速",
+    "enchantment.hce.super_attack_speed": "超级攻击加速",
+    "enchantment.hce.super_attack_speed.desc": "增加更多攻击加速",
+    "enchantment.hce.advanced_bane_of_arthropods": "高级节肢杀手",
+    "enchantment.hce.advanced_bane_of_arthropods.desc": "对节肢生物造成大量的伤害",
+    "enchantment.hce.super_bane_of_arthropods": "超级节肢杀手",
+    "enchantment.hce.super_bane_of_arthropods.desc": "对节肢生物造成巨量的伤害",
+    "enchantment.hce.experience_loot": "经经抢夺",
+    "enchantment.hce.experience_loot.desc": "字面意思，用它攻击可获得更多经验值",
+    "enchantment.hce.advanced_protection": "高级保护",
+    "enchantment.hce.advanced_protection.desc": "给穿戴者提供一小部分的保护",
+    "enchantment.hce.super_protection": "超级保护",
+    "enchantment.hce.super_protection.desc": "给穿戴者提供更强的保护",
+    
+    "enchantment.hce.advanced_sharpness": "高级锋利",
+    "enchantment.hce.advanced_sharpness.desc": "提供比普通锋利更高的伤害",
+    
+    "enchantment.hce.extreme_sharpness": "极限锋利",
+    "enchantment.hce.advanced_sharpness.desc": "提供比高级锋利更高的伤害",
+    
+    "enchantment.hce.super_sharpness": "超级锋利",
+    "enchantment.hce.super_sharpness.desc": "提供比极限锋利更高的伤害",
+    
+    "enchantment.hce.ultimate_sharpness": "终极锋利",
+    "enchantment.hce.ultimate_sharpness.desc": "提供比超级锋利更高的伤害",
+    
+    "enchantment.hce.advanced_smite": "高级亡灵杀手",
+    "enchantment.hce.advanced_smite.desc": "对亡灵生物造成大量伤害",
+    
+    "enchantment.hce.super_smite": "超级亡灵杀手",
+    "enchantment.hce.super_sharpness.desc": "对亡灵生物造成巨量伤害"
+}
